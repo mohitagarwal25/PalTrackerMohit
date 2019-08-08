@@ -1,0 +1,7 @@
+applications:
+  - name: PalTrackerMohit
+    path: build/libs/pal-tracker-mohit.jar
+    random-route: true
+    env:
+      WELCOME_MESSAGE: Hello from Cloud Foundry
+      JBP_CONFIG_OPEN_JDK_JRE: "{ jre: { version: 11.+ } }"
