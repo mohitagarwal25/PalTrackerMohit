@@ -1,10 +1,10 @@
 language: java
 deploy:
   provider: cloudfoundry
-  username: mohit.agarwal10@wipro.com
-  password: M@hitAg123
-  api: https://api.sys.pas-useast1.gcp-wipro.com
-  organization: Pcf-training
-  space: augbatch
+  username: $CF_USERNAME
+  password: $CF_PASSWORD
+  api: $CF_API
+  organization: $CF_ORG
+  space: $CF_SPACE
   manifest: manifest.yml       # (optional)  Defaults to manifest.yml.
   app_name: PalTrackerMohit                # (optional)
